@@ -1,51 +1,63 @@
-<!-- This HTML file displays your original Clock -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
-    <script language="javascript" type="text/javascript" src="z_purview_helper.js"></script>
-    <script language="javascript" type="text/javascript" src="clock.js"></script>
-    <script language="javascript" type="text/javascript" src="runner.js"></script>
-    <style>
-        body   { padding: 0; margin: 0; overflow: hidden;}
-        .inner { position: absolute; }
-        #controls {
-            font: 300 12px "Helvetica Neue";
-            padding: 5;
-            margin: 5;
-            background: #f0f0f0;
-            opacity: 0.0;
-            -webkit-transition: opacity 0.2s ease;
-            -moz-transition: opacity 0.2s ease;
-            -o-transition: opacity 0.2s ease;
-            -ms-transition: opacity 0.2s ease;
-        }
-        #controls:hover { opacity: 0.9; }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperShopper | Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color:white">
-    <div class="outer">
-        <div class="inner">
-            <div id="canvasContainer"></div>
-            <a href="part1.html">part1</a>
-            <a href="part2.html">part2</a>
-            <a href="clock.html">clock</a>
-            <a href="debug.html">debug</a>
-        </div>
-        <div class="inner" id="controls" height="500px">
-            <table>
-                <tr>
-                    <td>Timer</td>
-                    <td id="slider1Container"></td>
-                </tr>
-                <tr>
-                    <td>Alarm Set</td>
-                    <td id="checkContainer1"></td>
-                </tr>
-                <tr>
-                    <td>Alarm Active</td>
-                    <td id="checkContainer2"></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-<br>
-</body>
+
+
+<body>
+    <header>
+        <nav> <!-- Logo-->
+            <a href="index.html"><img src="img/icons/logo.svg" width="64px"></a>
+        </nav>
+        <nav> <!-- Logo Text-->
+            <a href="index.html"><h1>SuperShopper</h1></a>
+        </nav>  
+        <nav> <!-- Cart-->
+            <a href="cartstart.html"><img src="img/icons/cart.svg" width="48px"></a>
+        </nav> 
+        <nav> <!-- Account-->
+            <img src="img/icons/account.svg" width="48px">
+        </nav> 
+        <nav> <!-- Search-->
+            <p>Search</p>
+            <img src="img/icons/search.svg" width="32px">
+        </nav> 
+    </header>
+    
+    <main class="home">
+        <section class="display">  <!-- Revolving Product Display-->
+            <a href="productpage.html"><img src="img/bannerthing.png" width="auto" height="auto"></a>
+            
+            <div>
+                <img src="img/icons/left.svg">
+            </div>
+
+            <div>
+                <img src="img/icons/right.svg">
+            </div>
+
+            <div>    
+                <img src="img/icons/filled.svg" width="32px">
+                <img src="img/icons/empty.svg" width="32px">
+                <img src="img/icons/empty.svg" width="32px">
+                <img src="img/icons/empty.svg" width="32px">
+                <img src="img/icons/empty.svg" width="32px">
+                <img src="img/icons/empty.svg" width="32px">
+            </div>
+        </section>
+        <section class="button"> <!-- Product Categories-->
+            <h3>Product Categories</h3>
+        </section> 
+       <section class="button"> <!-- Recommendations-->
+            <a href="recommended.html"><h3>Recommendations</h3></a>  
+               
+        </section> 
+    </main>
+    </body>
+
+</html>
